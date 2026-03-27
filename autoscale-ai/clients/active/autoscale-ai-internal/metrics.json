@@ -1,0 +1,24 @@
+{
+  "clientId": "autoscale-ai-internal",
+  "businessName": "AutoScale AI",
+  "status": "active",
+  "leads": 0,
+  "conversions": 0,
+  "revenue": 0,
+  "mrr": 0,
+  "lastUpdated": "2026-03-27T00:00:00Z",
+  "campaigns": {
+    "active": 0,
+    "total": 0
+  },
+  "content": {
+    "postsCreated": 0,
+    "postsPublished": 0,
+    "engagement": 0
+  },
+  "social": {
+    "tiktok": { "followers": 0, "posts": 0, "engagement": 0 },
+    "twitter": { "followers": 0, "posts": 0, "engagement": 0 },
+    "instagram": { "followers": 0, "posts": 0, "engagement": 0 }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "clientId": "autoscale-ai-internal",
+  "name": "AutoScale AI",
+  "model": "saas",
+  "package": "growth",
+  "industry": "AI Automation",
+  "status": "active",
+  "createdAt": "2026-03-27T00:00:00Z",
+  "contact": {
+    "name": "Benjamin",
+    "email": "sidewayz8@example.com",
+    "phone": "TBD",
+    "timezone": "US/Central"
+  },
+  "billing": {
+    "monthlyFee": 997,
+    "setupFee": 2000,
+    "currency": "USD"
+  },
+  "goals": {
+    "mrrTarget30d": 2991,
+    "mrrTarget90d": 8910,
+    "mrrTarget6m": 12437,
+    "mrrTarget12m": 29865
+  },
+  "target": {
+    "audience": "Solopreneurs, coaches, small agency owners (1-10 employees)",
+    "painPoint": "Spending 20+ hours/week on marketing with no results",
+    "offer": "AI agent team that creates content, posts 24/7, and generates leads on autopilot",
+    "pricePoint": "997"
+  },
+  "social": {
+    "tiktok": { "handle": "@autoscaleai", "followers": 0, "enabled": true },
+    "twitter": { "handle": "@autoscaleai", "followers": 0, "enabled": true },
+    "instagram": { "handle": "@autoscaleai", "followers": 0, "enabled": true },
+    "linkedin": { "url": "TBD", "enabled": false }
+  },
+  "brand": {
+    "tone": "Direct, no-BS, protective but helpful",
+    "colors": ["#000000", "#FF0000", "#FFFFFF"],
+    "keyMessages": [
+      "AI agents work 24/7 so you don't have to",
+      "Replace a 10-person team with AI",
+      "Don't worry. Even if the world forgets, we'll remember for you."
+    ]
+  },
+  "integrations": {
+    "late": { "enabled": false, "apiKey": "" },
+    "stripe": { "enabled": false, "account": "" },
+    "openai": { "enabled": false, "apiKey": "" },
+    "revenuecat": { "enabled": false }
+  },
+  "workflows": {
+    "socialPosting": { "enabled": true, "frequency": "3x daily" },
+    "emailNewsletter": { "enabled": true, "frequency": "weekly" },
+    "leadGeneration": { "enabled": true },
+    "supportMonitoring": { "enabled": true },
+    "analyticsReports": { "enabled": true, "frequency": "weekly" }
+  },
+  "agents": {
+    "alex": { "role": "CEO", "enabled": true },
+    "sam": { "role": "CTO", "enabled": true },
+    "maya": { "role": "Marketing", "enabled": true },
+    "sean": { "role": "Support", "enabled": true },
+    "sara": { "role": "Sales", "enabled": true }
+  }
+}
