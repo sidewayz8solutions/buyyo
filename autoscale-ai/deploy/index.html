@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoScale AI - Replace Your Marketing Team with AI Agents</title>
+    <meta name="description" content="AI agents that create content, post 24/7, and generate leads on autopilot. Replace a 10-person marketing team.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+            background: #0a0a0a; 
+            color: #fff;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Hero */
+        .hero { 
+            text-align: center; 
+            padding: 120px 20px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a0000 100%);
+        }
+        .badge {
+            display: inline-block;
+            background: #FF0000;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h1 { 
+            font-size: clamp(40px, 8vw, 72px); 
+            font-weight: 900; 
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -2px;
+        }
+        .highlight { color: #FF0000; }
+        .subhead { 
+            font-size: clamp(18px, 3vw, 24px); 
+            color: #888; 
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        .cta { 
+            display: inline-block; 
+            background: #FF0000; 
+            color: #fff; 
+            padding: 20px 48px; 
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 40px rgba(255,0,0,0.3);
+        }
+        
+        /* Social Proof */
+        .social-proof {
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+        .social-proof p {
+            color: #666;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+        .logos {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            opacity: 0.5;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        /* Features */
+        .features { 
+            padding: 100px 20px;
+            background: #0f0f0f;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 60px;
+        }
+        .features-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 40px; 
+        }
+        .feature { 
+            background: #1a1a1a;
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid #222;
+        }
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .feature h3 { 
+            font-size: 24px; 
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+        .feature p { 
+            color: #888; 
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Pricing */
+        .pricing {
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 60px auto 0;
+        }
+        .pricing-card {
+            background: #1a1a1a;
+            padding: 50px 40px;
+            border-radius: 16px;
+            border: 1px solid #222;
+            position: relative;
+        }
+        .pricing-card.popular {
+            border: 2px solid #FF0000;
+            transform: scale(1.05);
+        }
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #FF0000;
+            color: #fff;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        .pricing-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 56px;
+            font-weight: 800;
+            margin: 20px 0;
+        }
+        .price span {
+            font-size: 18px;
+            color: #666;
+            font-weight: 400;
+        }
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+            margin: 30px 0;
+        }
+        .pricing-card li {
+            padding: 10px 0;
+            color: #aaa;
+            border-bottom: 1px solid #222;
+        }
+        .pricing-card li:before {
+            content: "✓ ";
+            color: #FF0000;
+            font-weight: bold;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #1a0000 0%, #0a0a0a 100%);
+        }
+        .cta-section h2 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        .cta-section p {
+            color: #888;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="badge">Now Accepting Beta Clients</div>
+            <h1>Replace Your Marketing Team with <span class="highlight">AI Agents</span></h1>
+            <p class="subhead">AI agents that create content, post 24/7, and generate leads on autopilot. No hiring. No management. Just results.</p>
+            <a href="#pricing" class="cta">Start Your Free Trial →</a>
+        </div>
+    </section>
+    
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p>Trusted by founders who want to scale without the team</p>
+            <div class="logos">
+                <span>SaaS Founders</span>
+                <span>Coaches</span>
+                <span>Agencies</span>
+                <span>Solopreneurs</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">What You Get</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI Content Team</h3>
+                    <p>5 AI agents working 24/7. They research trends, write hooks, create content, and optimize based on performance. Never sleeps, never calls in sick.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Auto-Posting</h3>
+                    <p>TikTok, Twitter, Instagram—posted 3x daily automatically. Optimized for your audience. Cross-posted for maximum reach.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Lead Generation</h3>
+                    <p>Captures leads, nurtures with email sequences, and books calls. The entire funnel runs on autopilot.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Weekly Reports</h3>
+                    <p>Know exactly what's working. Your AI CEO generates detailed reports every week with recommendations to improve.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Self-Improving</h3>
+                    <p>The agents learn from every post. What works gets doubled down. What doesn't gets killed. Continuous optimization.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Done-For-You</h3>
+                    <p>We handle setup, deployment, and management. You get a dashboard to monitor. That's it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Simple Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">$297<span>/mo</span></div>
+                    <p style="color: #666; margin-bottom: 30px;">+$500 setup</p>
+                    <ul>
+                        <li>3 social platforms</li>
+                        <li>3 posts/day</li>
+                        <li>Basic landing page</li>
+                        <li>Monthly report</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#" class="cta" style="padding: 15px 30px; font-size: 16px;">Get Started</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Growth</h3>
+                    <div class="price">$997<span>/mo</span></div>
+                    <p style="color: #666; margin-bottom: 30px;">+$2,000 setup</p>
+                    <ul>
+                        <li>Everything in Starter</li>
+                        <li>All social platforms</li>
+                        <li>Blog content</li>
+                        <li>AI video production</li>
+                        <li>Weekly strategy calls</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="#" class="cta" style="padding: 15px 30px; font-size: 16px;">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">$2,997<span>/mo</span></div>
+                    <p style="color: #666; margin-bottom: 30px;">+$5,000 setup</p>
+                    <ul>
+                        <li>Everything in Growth</li>
+                        <li>Custom AI agents</li>
+                        <li>White-label options</li>
+                        <li>Dedicated support</li>
+                        <li>API access</li>
+                        <li>Quarterly reviews</li>
+                    </ul>
+                    <a href="#" class="cta" style="padding: 15px 30px; font-size: 16px;">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to <span class="highlight">Automate</span> Your Marketing?</h2>
+            <p>Join the beta. First 10 clients get 70% off for 3 months.</p>
+            <a href="#" class="cta">Start Your Free Trial →</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2026 AutoScale AI. All rights reserved. Don't worry. Even if the world forgets, we'll remember for you.</p>
+        </div>
+    </footer>
+</body>
+</html>
