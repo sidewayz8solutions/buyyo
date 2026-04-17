@@ -1,0 +1,13 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@hallpass/game-engine": ["../../packages/game-engine/src"],
+      "@hallpass/ai-npcs": ["../../packages/ai-npcs/src"],
+      "@hallpass/shared-ui": ["../../packages/shared-ui/src"],
+      "@hallpass/iap-core": ["../../packages/iap-core/src"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx"]
+}
